@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property dealer</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto 700px 400px;
+        }
+
+        .mid {
+            border: 2px solid rgb(5, 5, 243);
+            height: 400px;
+            background-image: url("https://th.bing.com/th/id/OIP.jgIfMZ77D6tmzt0SHR9UTwHaDF?w=311&h=145&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            background-size: 100% 100%;
+            margin: 0px;
+        }
+
+        .item {
+            height: 60px;
+        }
+
+        
+        
+
+        #list {
+            margin: 0px;
+        }
+
+        #list li {
+            display: inline-block;
+            margin: 0px 0px 0px 80px;
+            font-size: larger;
+        }
+
+        .button1 {
+            margin: 16px 0px 0px 50px;
+            width: 130px;
+            background-color: rgba(16, 8, 237, 0.758);
+            padding: 4px;
+        }
+
+        .button2 {
+            margin: 16px 0px 0px 50px;
+            background-color: rgba(17, 10, 241, 0.758);
+            width: 130px;
+            padding: 4px;
+        }
+
+        .image {
+            /* width: 100% ; */
+            background-size: 100% 100%;
+        }
+
+        .search {
+
+            width: 550px;
+            margin: 150px 0px 0px 500px;
+            padding: 0px;
+        }
+
+        #location {
+            background-color: rgba(182, 180, 252, 0.758);
+            width: 150px;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        #type {
+            background-color: rgba(182, 180, 252, 0.758);
+            width: 150px;
+            padding: 5px;
+        }
+
+        #Budget {
+            background-color: rgba(182, 180, 252, 0.758);
+            width: 150px;
+            padding: 5px;
+        }
+
+        #botton {
+            padding: 4px;
+        }
+
+        #logo {
+            background-color: rgb(10, 74, 114);
+            background-size: 100% 100%;
+            background-image: url("https://th.bing.com/th/id/OIP.3JPIGgal_V6kPrG78ASnygHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        }
+ 
+        .list :hover {
+            cursor: pointer;
+            background-color: rgba(182, 180, 252, 0.758);
+        }
+        .photo{
+            border: 4px solid rgb(245, 11, 11);
+            border-collapse: collapse;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            height: 210px;
+            /* margin: 5px; */
+            
+
+        }
+        .photo1{
+            border: 3px solid rgb(239, 8, 8);
+            grid-template-columns: 200px auto auto;
+        }
+        .photo1{
+            border: 3px solid rgb(244, 5, 5);
+            background-image: url("https://www.bing.com/th?id=OIP.-wj9s4UooBGzXpt61XnaDgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+            background-size: 100% 100%;
+        }.photo2{
+            border: 3px solid rgb(237, 4, 4);
+            background-image: url("https://www.bing.com/th?id=OIP.rTkWSKTaVe1Z1s5mgpSiWgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+            background-size: 100% 100%;
+        }.photo3{
+            border: 3px solid rgb(244, 4, 4);
+            background-image: url("https://th.bing.com/th/id/OIP.F19hh7_EkXKsoLzzvYOlYgHaE7?w=258&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            background-size: 100% 100%;
+        }
+        .photo4{
+            border: 3px solid rgb(241, 7, 7);
+            background-image: url("https://th.bing.com/th/id/OIP.ylZPEjTOKZMSxtFJ3j144QHaE8?pid=ImgDet&rs=1");
+            background-size: 100% 100%;
+        }
+        .thank{
+            /* border: 2px solid black; */
+            /* margin: 5px; */
+            height: 150px;
+        }
+        .about{
+            /* border: 2px solid black; */
+            width: 70px;
+            margin: 5px 0px 0px 0px;
+            border: 2px solid rgb(245, 4, 4);
+            background-color: rgba(252, 180, 180, 0.758);
+            padding: 3px;
+
+        }
+        .thankyou{
+            /* border: 2px solid black;  */
+            background-color: rgba(220, 252, 180, 0.758);
+            margin: -79px 0px 0px 1000px;
+            width: 260px;
+            padding: 7px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="logo">
+            <!-- <img src="Screenshot_2.png" alt=""> -->
+
+
+        </div>
+        <div class="item" id="list">
+            <ul class="list">
+                <li>Buy</li>
+                <li>Rent</li>
+                <li>Sell</li>
+                <li>contact us 
+                </li>
+            </ul>
+        </div>
+        <div class="item" id="login">
+            <form action="">
+                <input type="button" value="Signup" class="button1">
+                <input type="button" value="login" class="button2">
+            </form>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="search">
+            <label for="Location" class="location"></label>
+            <select name="Location" id="location">
+                <option value="1" selected>Location</option>
+                <option value="2">Delhi</option>
+                <option value="3">Mumbai</option>
+                <option value="4">Bangluru</option>
+                <option value="5">Jaipur</option>
+                <option value="6">Chennai</option>
+                <option value="7">Kolkata</option>
+                <option value="8">Hyderabad</option>
+                <option value="9">Surat</option>
+                <option value="10">Ahmedabad</option>
+            </select>
+
+            <select name="Property type" id="type">
+                <label for="Property Type" class="type"></label>
+
+                <option value="1" selected>Property Type</option>
+                <option value="2">2BHK</option>
+                <option value="3">3BHK</option>
+                <option value="4">4BHK</option>
+                <option value="5">5BHk</option>
+            </select>
+
+            <label for="Budget" class="Budget"></label>
+            <select name="Budget" id="Budget">
+                <option value="1" selected>Budget</option>
+                <option value="2">1cr-1.5cr</option>
+                <option value="3">1.5cr-2cr</option>
+                <option value="4">2cr-2.5cr</option>
+                <option value="5">2.5cr-3cr</option>
+                <option value="6">3cr-3.5cr</option>
+                <option value="7">3.5cr-4cr</option>
+                <option value="8">4cr and above</option>
+            </select>
+            <input type="button" value="Search" id="botton" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="photo">
+        <div class="photo1"></div>
+        <div class="photo2"></div>
+        <div class="photo3"></div>
+        <div class="photo4"></div>
+    </div>
+    <div class="thank">
+         </div>
+           <div class="about us">
+            About us
+        </div>
+        <p> <mark>Aditya properties has been full-time in selling and marketing residential real estate for more than two decade <br>
+             His experties and dedication helped more than 1,500 happy families find their dream home. <br>
+            <br> with an unprecedented passion for selling homes and providing families with "The Great Dream House", Aditya properties's prospecting <br>and closing stratiges have been praised by the best national sales and marketing consultant in the bussiness. Aditya properties has also <br>been reconized for his innovative action palns, which gurantee results for his clients. </mark>
+        </p>
+        
+        <div class="thankyou">
+            Thank you for chosing us
+        </div>
+    </div>
+</body>
+
+</html>
